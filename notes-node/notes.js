@@ -1,4 +1,3 @@
-console.log('Starting notes.js');
 
 const fs = require('fs');
 
@@ -29,19 +28,20 @@ var addNote = (title, body) => {
     saveNotes(notes);
     return note;
   }
+};
 
- 
+var getNote = (title) =>{
+  var notes = fetchNotes();
+  var noteToFetch = notes.filter((note) => note.title === title);
+  return noteToFetch[0];
 };
 
 
 
 var getAll = () => {
-  console.log('Getting all notes');
+  return fetchNotes();
 };
 
-var getNote = (title) =>{
-  console.log('Getting note', title);
-};
 
 var removeNote = (title) =>{
   console.log('Removing note', title);
@@ -51,10 +51,18 @@ var removeNote = (title) =>{
   return notes.length !== filtredNotes.length;
 };
 
+var logNote = (note) => {
+  debugger;
+  console.log('------------');
+  console.log(`Title: ${note.title}`);
+  console.log(`Body: ${note.body}`);
+};
+
 
 module.exports = {
   addNote,
   getAll,
   getNote,
-  removeNote
+  removeNote,
+  logNote
 };
