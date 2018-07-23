@@ -1,0 +1,69 @@
+{
+  "results": [
+    {
+      "address_components": [
+        {
+          "long_name": "15",
+          "short_name": "15",
+          "types": [
+            "street_number"
+          ]
+        },
+        {
+          "long_name": "Sderot Yehudit",
+          "short_name": "Sderot Yehudit",
+          "types": [
+            "route"
+          ]
+        },
+        {
+          "long_name": "Tel Aviv-Yafo",
+          "short_name": "Tel Aviv-Yafo",
+          "types": [
+            "locality",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Tel Aviv District",
+          "short_name": "Tel Aviv District",
+          "types": [
+            "administrative_area_level_1",
+            "political"
+          ]
+        },
+        {
+          "long_name": "Israel",
+          "short_name": "IL",
+          "types": [
+            "country",
+            "political"
+          ]
+        }
+      ],
+      "formatted_address": "Sderot Yehudit 15, Tel Aviv-Yafo, Israel",
+      "geometry": {
+        "location": {
+          "lat": 32.0702506,
+          "lng": 34.7905906
+        },
+        "location_type": "ROOFTOP",
+        "viewport": {
+          "northeast": {
+            "lat": 32.0715995802915,
+            "lng": 34.7919395802915
+          },
+          "southwest": {
+            "lat": 32.06890161970851,
+            "lng": 34.78924161970851
+          }
+        }
+      },
+      "place_id": "ChIJJeow1p1LHRUR2nlDwOG7JEI",
+      "types": [
+        "street_address"
+      ]
+    }
+  ],
+  "status": "OK"
+}
